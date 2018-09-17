@@ -61,6 +61,7 @@ const segments = document.querySelectorAll('ion-segment')
 for (let i = 0; i < segments.length; i++) {
   segments[i].addEventListener('ionChange', (ev) => {
     console.log('Segment changed', ev);
+    console.log('Checked Value', ev.detail.value);
   })
 }
 ```
